@@ -10,7 +10,7 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
-const team = [];
+const employees = [];
 
 const questions = [
     {
@@ -65,17 +65,16 @@ function init() {
 
     .then(answers => {
         if (answers.role === "Manager") {
-            employee = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
-            team.push(employee)
+            employees.push(new Manager(answers.name, answers.id, answers.email, answers.officeNumber));
         }
         else if (answers.role === "Engineer") {
-            team.push(new Engineer(answers.name, answers.id, answers.email, answers.github));
+            employees.push(new Engineer(answers.name, answers.id, answers.email, answers.github));
         }
         else if (answers.role === "Intern") {
-            team.push(new Intern(answers.name, answers.id, answers.email, answers.school));
+            employees.push(new Intern(answers.name, answers.id, answers.email, answers.school));
         }
         if (answers.addMore === false) {
-            console.log(team)
+            console.log(employees)
         } else {
             init();
         }
