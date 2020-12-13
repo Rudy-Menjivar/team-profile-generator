@@ -63,6 +63,23 @@ const questions = [
 function init() {
     inquirer.prompt(questions)
 
+    .then(answers => {
+        if (answers.role === "Manager") {
+            employee = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
+            team.push(employee)
+        }
+        else if (answers.role === "Engineer") {
+            team.push(new Engineer(answers.name, answers.id, answers.email, answers.github));
+        }
+        else if (answers.role === "Intern") {
+            team.push(new Intern(answers.name, answers.id, answers.email, answers.school));
+        }
+        if (answers.addMore === false) {
+            console.log(team)
+        } else {
+            init();
+        }
+    })
 }
 
 init();
