@@ -4,7 +4,12 @@
 ## Description
     
 This CLI application uses inquirer to prompt the client to enter the profile information for the team manager and team members. The team members may be a mix of engineers and interns. Once the team is built, the application will create an HTML file displaying the team roster.
-    
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="assets/tpg.png" width="640" height="480">
+    <source src="https://drive.google.com/file/d/1ttDKYac8zRryBP7feeQC7_zzo02o4679/preview" type="video/mp4">
+  </video>
+</figure>
 
 ## Content
 
@@ -35,7 +40,6 @@ Run this command to invoke this application:
   node app.js
   ```
   
-
 ## Contributing
     
 Any community contributions will help in achieving this project's success, so any help is greatly appreciated.
