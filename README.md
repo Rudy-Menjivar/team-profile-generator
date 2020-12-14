@@ -5,11 +5,8 @@
     
 This CLI application uses inquirer to prompt the client to enter the profile information for the team manager and team members. The team members may be a mix of engineers and interns. Once the team is built, the application will create an HTML file displaying the team roster.
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="assets/tpg.png" width="640" height="480">
-    <source src="https://drive.google.com/file/d/1ttDKYac8zRryBP7feeQC7_zzo02o4679/preview" type="video/mp4">
-  </video>
-</figure>
+<a href="https://drive.google.com/file/d/1ttDKYac8zRryBP7feeQC7_zzo02o4679/preview" target="_blank"><img src="assets/tpg.png" 
+alt="CLI preview video" width="640" height="480" border="0" /></a>
 
 ## Content
 
